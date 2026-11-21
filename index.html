@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 06 - External API Apps</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: linear-gradient(135deg, #232526, #414345);
+      color: #fff;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    .wrapper { max-width: 900px; margin: 0 auto; }
+    h1 { text-align: center; font-size: 2rem; margin-bottom: 8px; }
+    p.sub { text-align: center; color: #c5c5c5; margin-bottom: 32px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: block;
+      padding: 28px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 16px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover { transform: translateY(-4px); }
+    .card .icon { font-size: 2.6rem; margin-bottom: 10px; }
+    .card h2 { font-size: 1.3rem; margin-bottom: 6px; }
+    .card p { font-size: 0.9rem; opacity: 0.9; }
+
+    .movie { background: linear-gradient(135deg, #e50914, #8e0710); }
+    .weather { background: linear-gradient(135deg, #2193b0, #0b5d75); }
+    .translate { background: linear-gradient(135deg, #4b6cb7, #182848); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Project 06: Web Apps Using External APIs</h1>
+    <p class="sub">Choose an app to open</p>
+
+    <div class="cards">
+      <a class="card movie" href="movie-search-app/index.html">
+        <div class="icon">🎬</div>
+        <h2>Movie Search</h2>
+        <p>OMDb API</p>
+      </a>
+      <a class="card weather" href="weather-app/index.html">
+        <div class="icon">🌤️</div>
+        <h2>Weather App</h2>
+        <p>OpenWeatherMap API</p>
+      </a>
+      <a class="card translate" href="text-translator-app/index.html">
+        <div class="icon">🌐</div>
+        <h2>Text Translator</h2>
+        <p>LibreTranslate / MyMemory API</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
